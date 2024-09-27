@@ -63,6 +63,17 @@
             color: darkblue;
             text-decoration: underline;
         }
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 700px; /* Largura máxima do vídeo */
+            margin: auto;
+        }
+        video {
+            width: 100%; /* O vídeo ocupa 100% da largura disponível */
+            height: auto; /* Mantém a proporção */
+            border-radius: 10px; /* Bordas arredondadas (opcional) */
+        }
     </style>
 </head>
 <body>
@@ -108,7 +119,12 @@
         <p>
             Temos baterias a partir de R$170,00, de 40 a 220 amperes. Ligue já no telefone (62) 99651-5765 e faça seu orçamento.
        
-        <video src="videoplayback.mp4" ></video>
+            <div class="video-container">
+                <video controls poster="20230605_111922.jpg">
+                    <source src="videoplayback.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
         <img src="PXL_20221208_153853584.jpg" alt="Imagem de bateria sendo trocada">
         <img src="Screenshot_20240927_105112_Photos.jpg" alt="bateria de caminhão">
         <img src="20230605_112922.jpg" alt="Imagem de radiador">
